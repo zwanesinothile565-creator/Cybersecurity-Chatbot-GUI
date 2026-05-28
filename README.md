@@ -296,19 +296,6 @@ Possible future improvements include:
 
 
 
- GitHub Repository
-
-GitHub Link:
-
-
-
-
-
- YouTube Demonstration Video
-
-Video Link:
-
-
 
 
 
