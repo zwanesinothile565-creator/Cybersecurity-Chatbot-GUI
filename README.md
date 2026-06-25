@@ -183,7 +183,7 @@ Step 3
 Run the application:
 
 Press F5
-💡 How to Use the Chatbot
+ How to Use the Chatbot
 Enter your name
 Ask cybersecurity questions
 Take the quiz
