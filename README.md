@@ -1,306 +1,248 @@
-# Cybersecurity Awareness Chatbot – Part 2
+# Cybersecurity Awareness Chatbot – Part 3
 
 
-Mhlengi Zwane
-
-St10465232
 
 
- Project Overview
+Name: Mhlengi Zwane
+Student Number: ST10465232
 
-The Cybersecurity Awareness Chatbot is a GUI-based chatbot application developed using C# and WPF in Visual Studio 2022. The chatbot helps educate users about cybersecurity topics such as phishing, password safety, scams, privacy, malware, and safe browsing.
+Project Overview
 
-The chatbot was improved from the console-based application created in Part 1 into a modern graphical user interface application with dynamic responses, sentiment detection, memory recall, and conversational flow.
+The Cybersecurity Awareness Chatbot (Part 3) is a fully developed GUI-based application created using C# and WPF in Visual Studio 2022 (.NET 8).
 
+The system is designed to educate users about cybersecurity concepts such as:
 
+Password security
+Phishing attacks
+Malware and ransomware
+Firewalls and VPNs
+Social engineering
+Safe browsing practices
+Two-factor authentication (2FA)
+
+The chatbot has been upgraded from a basic console application (Part 1) into a fully interactive graphical chatbot system with advanced features including a quiz system, task manager, and conversational AI behaviour.
 
  Features Implemented
-
 1. GUI Design and Implementation
 
-The chatbot uses a professional WPF graphical user interface that includes:
+The chatbot uses a modern WPF interface featuring:
 
-* Modern sidebar navigation menu
-* Chat display area
-* User input area
-* Coloured chatbot and user messages
-* Professional cybersecurity colour scheme
-* Responsive layout
-* ASCII-inspired shield logo
-* Smooth user interaction
+Sidebar navigation panel
+Chat display window
+User input textbox
+Send button interaction system
+Dark cybersecurity-themed UI
+Scrollable chat history
+Bot and user message formatting
+Responsive layout design
 
+The GUI improves user experience and makes the system more interactive and user-friendly.
 
+2.  Chatbot Conversation System
 
- 2. Keyword Recognition
+The chatbot responds to cybersecurity-related input using keyword detection.
 
-The chatbot recognises multiple cybersecurity-related keywords including:
-
-* Password
-* Phishing
-* Scam
-* Privacy
-* Malware
-* Safe Browsing
-* VPN
-* Firewall
-* Antivirus
-
-The chatbot responds with educational information based on the detected keyword.
-
+Supported topics:
+Password safety
+Phishing awareness
+Malware and ransomware
+VPN usage
+Firewalls
+Social engineering
+Privacy protection
+Safe browsing
+Multi-factor authentication (2FA)
 Example:
 
-* “Tell me about phishing”
-* “What is malware?”
-* “Explain password safety”
-
-
-
- 3. Random Responses
-
-The chatbot uses lists and random selection to provide varied responses for cybersecurity tips.
-
-Examples:
-
-* Different phishing tips
-* Different password safety tips
-* Different privacy tips
-* Different scam prevention tips
-
-This makes conversations more engaging and less repetitive.
-
-
-
- 4. Conversation Flow
-
-The chatbot maintains conversational context using topic tracking.
-
-The chatbot supports:
-
-* “Tell me more”
-* “Explain more”
-* “Give me another tip”
-
-The chatbot remembers the current topic and continues the discussion naturally without restarting the conversation.
-
-
-
- 5. Memory and Recall
-
-The chatbot stores user information including:
-
-* User name
-* User mood
-* Favourite cybersecurity topic
-
-The chatbot later uses stored information to personalise responses.
-
-Example:
-
-* “I like privacy”
-* Chatbot remembers the interest in privacy
-
-
-
- 6. Sentiment Detection
-
-The chatbot detects user emotions and changes responses accordingly.
-
-Supported sentiments:
-
-* Worried
-* Curious
-* Frustrated
-* Confused
-* Happy
-
-Example:
 User:
-“I am worried about phishing.”
+“Explain phishing”
 
-Chatbot:
-Provides empathetic reassurance and educational support.
+Bot:
+Provides an educational explanation of phishing attacks.
 
+3. Cybersecurity Knowledge Base (Part 2 Content Integration)
 
+The chatbot includes expanded cybersecurity content from Part 2, ensuring a wider knowledge base.
 
- 7. Error Handling
+It provides detailed explanations of:
 
-The chatbot handles invalid or unknown input safely.
+Cyber threats
+Online safety practices
+Security tools
+Human-based attacks (social engineering)
+Network protection methods
 
-Default response:
-“I didn't quite understand that. Could you rephrase your question?”
+This improves the educational value of the system.
 
-This prevents crashes and ensures smooth functionality.
+4.  Quiz System (15 Questions)
 
+The system includes an interactive quiz with 15 cybersecurity questions.
 
-8. Code Optimisation
+Features:
+True/False format
+Score tracking
+Progress tracking
+Final result display
+Chat-based quiz interaction
+Example Questions:
+Is phishing safe?
+Do firewalls protect networks?
+Is 2FA recommended?
+Is public WiFi always safe?
 
-The project follows Object-Oriented Programming principles using:
+The quiz helps reinforce cybersecurity learning.
 
-* Classes
-* Methods
-* Delegates
-* Lists
-* Generic collections
-* Encapsulation
+5.  Task Manager System
 
-The code is modular and structured for future expansion in Part 3.
+Users can add and view cybersecurity study tasks.
 
+Features:
+Add tasks
+View tasks
+Mark completion status
+Task reminders (timer-based system)
 
+This helps users manage cybersecurity learning effectively.
+
+6.  Reminder System
+
+The system includes an automatic reminder feature using timers.
+
+Reminds users about pending tasks
+Runs every 60 seconds
+Displays alerts in chat window
+7.  Activity Logging System
+
+The chatbot records user interactions such as:
+
+Task creation
+Quiz activity
+System usage logs
+
+This improves tracking and system transparency.
+
+8.  Conversation Flow & NLP Detection
+
+The chatbot uses basic Natural Language Processing (NLP) techniques:
+
+Keyword detection
+Intent recognition
+Context-aware responses
+Quiz mode detection
+
+This allows more natural conversation flow.
+
+9.  Error Handling
+
+The system includes safe error handling:
+
+Handles empty input
+Prevents application crashes
+Provides fallback responses
+
+Example fallback:
+
+“I didn’t quite understand that. Please try again.”
 
  Technologies Used
-
-* C#
-* WPF (Windows Presentation Foundation)
-* .NET 8
-* Visual Studio 2022
-
-
-
+C#
+WPF (Windows Presentation Foundation)
+.NET 8
+Visual Studio 2022
+Object-Oriented Programming (OOP)
  Project Structure
-
- Files Included
-
- MainWindow.xaml
-
-Contains the GUI layout and interface design.
-
- MainWindow.xaml.cs
-
-Controls user interaction and chatbot GUI behaviour.
-
+Main Files
+MainWindow.xaml
+→ Handles GUI layout and design
+MainWindow.xaml.cs
+→ Controls chatbot logic and user interaction
 Chatbot.cs
-
-Contains chatbot logic, keyword recognition, sentiment detection, memory recall, and responses.
-
-
-
+→ Contains cybersecurity responses and keyword detection
+QuizManager.cs
+→ Handles quiz logic and scoring system
+TaskManager.cs
+→ Manages tasks and reminders
+ActivityLogger.cs
+→ Stores system activity logs
+NLPProcessor.cs
+→ Detects user intent
+Models (TaskItem, QuizQuestion)
+→ Stores structured data
  How to Run the Project
-
 Step 1
 
-Open the solution file in Visual Studio 2022.
+Open the solution in Visual Studio 2022
 
 Step 2
 
-Build the solution:
+Build the project:
 
- Build → Rebuild Solution
-
- Step 3
+Build → Rebuild Solution
+Step 3
 
 Run the application:
 
 Press F5
-
-
-
- How to Use the Chatbot
-
- Step 1
-
-Enter your name.
-
- Step 2
-
-Enter your mood.
-
- Step 3
-
-Ask cybersecurity questions such as:
-
-* “Tell me about phishing”
-* “Tell me about password safety”
-* “I am worried about scams”
-* “Give me another tip”
-* “Tell me more”
-
-
-
+💡 How to Use the Chatbot
+Enter your name
+Ask cybersecurity questions
+Take the quiz
+Add tasks
+View logs
  Example Conversation
 
 User:
-Tell me about phishing
+What is phishing?
 
 Bot:
-Phishing is a type of cyberattack where scammers pretend to be trusted organisations to steal sensitive information.
+Phishing is a cyberattack where attackers trick users into revealing sensitive information.
 
 User:
-Tell me more
+Start quiz
 
 Bot:
-Phishing attacks usually create urgency or fear to manipulate victims.
+Quiz Started!
 
-User:
-Give me another tip
-
-Bot:
-Do not click suspicious links from unknown senders.
-
-
-
+Is phishing safe? (true/false)
  OOP Concepts Used
-
- Encapsulation
-
-Data and methods are grouped inside classes.
-
-Delegates
-
-Delegates are used for response handling.
-
-Collections
-
-Lists are used to store multiple chatbot responses.
-
- Methods
-
-Methods are used to organise chatbot functionality.
-
-
-
+Encapsulation (classes for each feature)
+Abstraction (hidden logic in services)
+Classes and Objects
+Lists and Collections
+Methods and Functions
+Modular programming
  Challenges Faced
-
-* Converting console chatbot into WPF GUI
-* Managing conversation flow
-* Implementing sentiment detection
-* Fixing keyword recognition conflicts
-* Preventing repetitive responses
-* Managing GUI event handling
-
-
-
- Improvements from Part 1
-
-| Part 1                 | Part 2                        |
-| ---------------------- | ----------------------------- |
-| Console application    | GUI application               |
-| Static responses       | Dynamic responses             |
-| No memory              | Memory recall                 |
-| No sentiment detection | Sentiment-aware responses     |
-| Basic interaction      | Conversational flow           |
-| Limited topics         | Expanded cybersecurity topics |
-
-
-
+Managing quiz duplication errors
+Fixing namespace conflicts
+Handling WPF event binding issues
+Implementing timer-based reminders
+Improving chatbot accuracy
+Structuring OOP architecture
+ Improvements from Part 2
+Feature	Part 2	Part 3
+Interface	Basic GUI	Modern WPF UI
+Chatbot	Keyword-based	Enhanced NLP + context
+Quiz	Basic	15-question system
+Memory	Limited	Improved interaction flow
+Tasks	Not available	Full task system
+Logging	Not available	Activity tracking
+UX	Simple	Professional design
  Future Improvements
+AI-powered chatbot (GPT integration)
+Database storage (SQL Server)
+Voice assistant support
+Login system with user profiles
+Cloud-based synchronization
+Dark/light mode toggle
+Mobile version
+ Conclusion
 
-Possible future improvements include:
+The Cybersecurity Awareness Chatbot (Part 3) successfully demonstrates the development of a full-featured WPF application using C#. It integrates cybersecurity education with interactive features such as quizzes, task management, and conversational AI.
 
-* Database integration
-* AI-generated responses
-* Voice recognition
-* Speech synthesis
-* User login system
-* Dark/light theme switching
-* Cloud integration
+The system meets all Part 3 requirements and demonstrates strong understanding of:
 
-
-
-
-
-
-Conclusion
-
-This project successfully demonstrates the development of a GUI-based cybersecurity chatbot using C# and WPF. The chatbot provides interactive cybersecurity education while implementing important programming concepts such as OOP, collections, delegates, sentiment detection, memory recall, and conversational flow.
-
-The chatbot meets the requirements for Part 2 and provides a strong foundation for future improvements in Part 3.
+Object-Oriented Programming
+GUI development
+Event-driven programming
+Cybersecurity principles
+Software design and modular architecture
